@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noleggio operativo | Tuteva</title>
+<meta name="description" content="Noleggio operativo di smartphone, tablet e dispositivi aziendali con assistenza: ti affianco al partner giusto.">
+<link rel="canonical" href="https://tuteva.it/noleggio-operativo.html">
+<meta property="og:title" content="Noleggio operativo | Tuteva">
+<meta property="og:description" content="Noleggio operativo di smartphone, tablet e dispositivi aziendali con assistenza: ti affianco al partner giusto.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tuteva.it/noleggio-operativo.html">
+<meta property="og:locale" content="it_IT">
+<meta name="theme-color" content="#14213D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%2314213D%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2710%27 fill=%27%230A7F62%27/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/schibsted-grotesk.woff" as="font" type="font/woff" crossorigin> <link rel="preload" href="fonts/hanken-grotesk.woff" as="font" type="font/woff" crossorigin> <link rel="stylesheet" href="fonts/fonts.css">
+
+
+<style>
+/* Direzione C: sfondo chiaro freddo, navy + verde, grotesque moderni, tessere-domanda */
+:root {
+  --bg: #F3F6FB;
+  --fg: #14213D;
+  --fg-muted: #46526E;
+  --accent: #0A7F62;
+  --accent-tint: #DDF3EC;
+  --navy: #14213D;
+  --card-bg: #FFFFFF;
+  --border: #DCE3EE;
+  --font-display: 'Schibsted Grotesk', system-ui, sans-serif;
+  --font-body: 'Hanken Grotesk', system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 17px;
+  margin: 0; padding: 0 20px;
+  line-height: 1.55;
+}
+.wrap { max-width: 760px; margin: 0 auto; }
+.wrap-wide { max-width: 1040px; margin: 0 auto; }
+.center { text-align: center; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; line-height: 1.08; margin: 0; letter-spacing: -0.02em; }
+h1 { font-size: clamp(2.2rem, 5.4vw, 3.9rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.02; }
+h2 { font-size: clamp(1.7rem, 3.8vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; }
+h3 { font-size: 1.3rem; }
+p { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
+.eyebrow { color: var(--accent); font-weight: 700; font-size: 0.95rem; }
+header.site {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: var(--bg); padding-block: 16px;
+}
+header.site .row { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+.brand { display: inline-flex; flex-direction: column; text-decoration: none; color: var(--fg); line-height: 1; }
+.brand .wm { font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; letter-spacing: -0.04em; }
+.brand .wm i { font-style: normal; color: var(--accent); }
+.brand .tag { font-size: 0.74rem; font-weight: 600; color: var(--fg-muted); margin-top: 5px; letter-spacing: 0.01em; }
+nav.main { display: flex; gap: 6px 22px; flex-wrap: wrap; align-items: center; }
+nav.main a { color: var(--fg-muted); text-decoration: none; font-size: 0.95rem; font-weight: 600; }
+nav.main a:hover { color: var(--fg); }
+nav.main a.active { color: var(--fg); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 7px; }
+section { padding-block: 56px; }
+section.tight { padding-block: 28px; }
+.hero { padding-block: 48px 36px; }
+.hero p.lead { font-size: 1.2rem; color: var(--fg-muted); max-width: 640px; margin-top: 20px; }
+.center .lead { margin-inline: auto; }
+.btn {
+  display: inline-flex; align-items: center;
+  background: var(--accent); color: #FFFFFF; font-weight: 700; text-decoration: none;
+  padding: 16px 30px; border-radius: 999px; font-size: 1.05rem; margin-top: 28px;
+  border: none; cursor: pointer; font-family: var(--font-body);
+}
+.btn:hover { background: #086A52; }
+.greet {
+  display: inline-flex; align-items: center; gap: 14px; background: var(--card-bg);
+  padding: 8px 22px 8px 8px; border-radius: 999px; font-weight: 600;
+  box-shadow: 0 4px 16px rgba(20,33,61,0.08);
+}
+.greet img { display: block; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: 50% 30%; }
+.asks { display: flex; flex-wrap: wrap; gap: 16px; }
+.ask {
+  flex: 1 1 380px; min-width: 0; text-decoration: none; color: var(--fg);
+  background: var(--card-bg); border: 2px solid transparent; border-radius: 20px; padding: 28px;
+  display: flex; gap: 20px; align-items: flex-start; box-shadow: 0 2px 10px rgba(20,33,61,0.06);
+}
+.ask:hover { border-color: var(--accent); }
+.ask .t { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; line-height: 1.15; letter-spacing: -0.01em; }
+.ask .d { display: block; margin-top: 6px; color: var(--fg-muted); font-size: 1rem; }
+.card-icon, .hero-icon {
+  flex: none; display: flex; align-items: center; justify-content: center;
+  width: 56px; height: 56px; border-radius: 16px; background: var(--accent-tint); color: var(--accent);
+}
+.card-icon svg, .hero-icon svg { width: 30px; height: 30px; display: block; }
+.hero-icon { margin-bottom: 20px; }
+.band-white { background: var(--card-bg); margin: 0 -20px; padding: 80px 20px; }
+.timeline { border-left: 3px solid #0FA37F; padding-left: 32px; display: flex; flex-direction: column; gap: 36px; margin-top: 36px; }
+.timeline h3 { margin-bottom: 6px; }
+.timeline p { color: var(--fg-muted); }
+.zone { color: var(--fg-muted); max-width: 720px; margin: 36px auto 0; font-size: 1rem; }
+.cta-band { background: var(--navy); color: #FFFFFF; border-radius: 28px; padding: 56px 32px; text-align: center; }
+.cta-band p { color: #C5CCDD; max-width: 520px; margin: 16px auto 0; font-size: 1.1rem; }
+.cta-band .btn { background: var(--accent-tint); color: var(--navy); }
+.cta-band .btn:hover { background: #FFFFFF; }
+.quote {
+  background: var(--accent-tint); border-radius: 20px; padding: 24px 28px; margin-top: 18px;
+  color: var(--fg);
+}
+.list-check { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.list-check li { padding-left: 32px; position: relative; }
+.list-check li::before {
+  content: "✓"; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--accent-tint); color: var(--accent); font-weight: 800; font-size: 0.8rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.note-box {
+  background: var(--card-bg); border-radius: 16px;
+  padding: 16px 20px; margin-top: 24px; font-size: 0.92rem; color: var(--fg-muted);
+}
+form.contact { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; max-width: 520px; }
+form.contact label { font-size: 0.95rem; font-weight: 600; color: var(--fg); display: block; margin-bottom: 6px; }
+form.contact input, form.contact select, form.contact textarea {
+  width: 100%; padding: 13px 14px; border-radius: 12px; border: 1.5px solid var(--border);
+  background: var(--card-bg); color: var(--fg); font-family: var(--font-body); font-size: 1rem;
+}
+form.contact textarea { min-height: 110px; resize: vertical; }
+.form-status { font-size: 1rem; margin-top: 4px; display: none; }
+.form-status.ok { color: var(--accent); font-weight: 600; display: block; }
+footer.site {
+  padding-block: 36px 48px; margin-top: 40px;
+  color: var(--fg-muted); font-size: 0.92rem;
+}
+footer.site .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+hr.rule { border: none; border-top: 1px solid var(--border); margin-block: 8px; }
+
+:root { --wa: #128C4B; --wa-dark: #0D7340; }
+body { padding-bottom: 96px; }
+.btn-wa { background: var(--wa); color: #FFFFFF; gap: 10px; }
+.btn-wa:hover { background: var(--wa-dark); }
+.btn svg { width: 22px; height: 22px; flex: none; display: block; }
+.btn-ghost { background: transparent; color: var(--fg); border: 2px solid var(--fg); padding: 14px 26px; }
+.btn-ghost:hover { background: var(--fg); color: #FFFFFF; }
+.btn-sm { padding: 10px 18px; font-size: 0.95rem; margin-top: 0; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; margin-top: 28px; }
+.cta-row .btn { margin-top: 0; }
+.center .cta-row, .cta-band .cta-row { justify-content: center; }
+.trust { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; padding: 0; margin: 22px 0 0; color: var(--fg-muted); font-size: 0.95rem; font-weight: 600; }
+.center .trust { justify-content: center; }
+.trust li::before { content: "✓"; color: var(--accent); margin-right: 8px; font-weight: 800; }
+.cta-band .btn-ghost { background: transparent; color: #FFFFFF; border-color: #FFFFFF; }
+.cta-band .btn-ghost:hover { background: #FFFFFF; color: var(--navy); }
+.cta-band .btn-wa { background: var(--wa); color: #FFFFFF; }
+.cta-band .btn-wa:hover { background: var(--wa-dark); }
+.cta-band .cta-row { margin-top: 28px; }
+.wa-float {
+  position: fixed; z-index: 20;
+  right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--wa); color: #FFFFFF; text-decoration: none; font-weight: 700;
+  padding: 14px 22px 14px 18px; border-radius: 999px; font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(20,33,61,0.28);
+}
+.wa-float:hover { background: var(--wa-dark); }
+.wa-float svg { width: 26px; height: 26px; display: block; }
+.status-wa { display: none; margin-top: 8px; }
+.status-wa.on { display: block; }
+.consent { font-size: 0.88rem; color: var(--fg-muted); }
+header.site .wrap-wide { max-width: 1160px; }
+nav.main { gap: 6px 18px; }
+@media (max-width: 1240px) { .hdr-cta { display: none; } }
+@media (max-width: 700px) {
+  .hdr-cta { display: none; }
+  header.site { padding-block: 12px; }
+  nav.main { flex-wrap: nowrap; overflow-x: auto; width: 100%; gap: 6px 18px; padding-bottom: 6px; scrollbar-width: none; }
+  nav.main a { white-space: nowrap; }
+  .hero { padding-block: 24px 28px; }
+  .hero .hero-icon { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) { .btn, .wa-float { transition: background .15s; } }
+
+.others { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+.other { display: flex; gap: 12px; align-items: center; background: var(--card-bg); border-radius: 16px; padding: 14px 16px; text-decoration: none; color: var(--fg); font-family: var(--font-display); font-weight: 700; min-width: 0; }
+.other:hover { outline: 2px solid var(--accent); }
+.other .card-icon { width: 40px; height: 40px; border-radius: 12px; }
+.other .card-icon svg { width: 22px; height: 22px; }
+.zones { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 28px; text-align: left; }
+.zonecard { background: var(--card-bg); border-radius: 18px; padding: 22px; text-decoration: none; color: var(--fg); min-width: 0; }
+.zonecard:hover { outline: 2px solid var(--accent); }
+.zonecard strong { display: block; font-family: var(--font-display); font-size: 1.2rem; }
+.zonecard span { display: block; margin-top: 6px; color: var(--fg-muted); font-size: 0.95rem; }
+.label-sec { color: var(--fg-muted); font-weight: 700; font-size: 0.95rem; margin-top: 28px; }
+</style>
+
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap-wide row">
+    <a class="brand" href="index.html" aria-label="Tuteva, sicurezza e opportunit&agrave; per la tua azienda"><span class="wm">tuteva<i>.</i></span><span class="tag">Sicurezza e opportunit&agrave;</span></a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="sicurezza-81-08.html">Sicurezza 81/08</a>
+      <a href="cybersicurezza-privacy.html">Privacy e Cyber</a>
+      <a href="fiscale.html">Fiscale</a>
+      <a href="finanza-agevolata.html">Finanza</a>
+      <a href="digitale.html">Digitale</a>
+      <a href="noleggio-operativo.html" class="active">Noleggio</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <a class="btn btn-wa btn-sm hdr-cta" href="https://wa.me/393493159759?text=Ciao%20Alessandro%2C%20vorrei%20parlarti%20di%20un%27esigenza%20della%20mia%20azienda." target="_blank" rel="noopener" data-cta="header-wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2.1-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2.1L9 8.5z"/></svg>Scrivimi</a>
+  </div>
+</header>
+
+
+<section class="hero wrap">
+  <span class="hero-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 19h18"/><path d="M9 15v4M15 15v4"/></svg></span>
+  <span class="eyebrow">Noleggio operativo</span>
+  <h1>Smartphone e dispositivi per la tua azienda con un canone, senza il costo di un acquisto</h1>
+  <p class="lead">Un canone mensile al posto di un investimento iniziale, con assistenza e copertura per i danni accidentali. Sono il tuo primo punto di contatto: capiamo cosa serve alla tua squadra e ti affianco al partner per la parte operativa.</p>
+  <div class="cta-row"><a class="btn btn-wa " href="https://wa.me/393493159759?text=Ciao%20Alessandro%2C%20vorrei%20capire%20se%20conviene%20noleggiare%20i%20dispositivi%20per%20la%20mia%20azienda.%20%5BRif%3A%20noleggio-operativo%5D" target="_blank" rel="noopener" data-cta="hero-wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2.1-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2.1L9 8.5z"/></svg>Scrivimi su WhatsApp</a><a class="btn btn-ghost" href="contatti.html" data-cta="hero-form">Preferisco il modulo</a></div><ul class="trust"><li>Ti rispondo personalmente</li><li>Un solo referente per tutto</li><li>Nord Milano, Groane e Brianza Ovest</li></ul>
+</section>
+
+<section class="wrap tight">
+  <span class="eyebrow">Cosa puoi noleggiare</span>
+  <ul class="list-check">
+    <li>Smartphone, anche in versione ricondizionata</li>
+    <li>Dispositivi rugged per chi lavora in cantiere, magazzino o in esterno</li>
+    <li>Tablet e smartwatch</li>
+    <li>Altre attrezzature per l'ufficio e per l'attivit&agrave;, da verificare insieme in base alla tua esigenza</li>
+  </ul>
+</section>
+
+<section class="wrap tight">
+  <span class="eyebrow">Come funziona</span>
+  <ul class="list-check">
+    <li>Scegli il livello di servizio pi&ugrave; adatto, dal pi&ugrave; essenziale al pi&ugrave; completo</li>
+    <li>Scegli la durata del contratto, ad esempio 24 o 36 mesi</li>
+    <li>Paghi un canone mensile definito in anticipo</li>
+    <li>Assistenza inclusa e copertura per i danni accidentali, secondo il livello scelto</li>
+    <li>Alla scadenza puoi rinnovare, prorogare o cambiare dispositivo</li>
+  </ul>
+</section>
+
+<section class="wrap tight">
+  <span class="eyebrow">Quando conviene valutarlo</span>
+  <ul class="list-check">
+    <li>Devi dotare di dispositivi una squadra e vuoi sapere quanto spendi ogni mese</li>
+    <li>Non vuoi immobilizzare capitale in dispositivi che perdono valore col tempo</li>
+    <li>Vuoi rinnovare i dispositivi con regolarit&agrave;, senza occuparti dello smaltimento</li>
+  </ul>
+  <div class="note-box">Il trattamento fiscale e contabile del noleggio dipende dalla situazione di ogni azienda: lo verifichiamo insieme, anche con lo studio partner. Canoni, durate e condizioni vengono definiti con una proposta su misura.</div>
+</section>
+
+<section class="wrap tight">
+  <span class="eyebrow">Un tema collegato</span>
+  <p style="color:var(--fg-muted); margin-top:10px; max-width:620px;">Se i dispositivi trattano dati dei clienti, conta anche la protezione dei dati: guarda la sezione <a href="cybersicurezza-privacy.html">privacy e cybersicurezza (GDPR, NIS2)</a>.</p>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">Perch&eacute; rivolgerti a me prima che al fornitore diretto</span>
+  <p class="quote">Confrontare formule di noleggio da soli non &egrave; semplice: durata, livello di assistenza e coperture cambiano da caso a caso. Io ti aiuto a capire cosa ti serve e ti affianco a chi gestisce il noleggio, restando il tuo riferimento.</p>
+</section>
+
+<section class="wrap-wide" style="padding-top:0;">
+  <div class="cta-band">
+    <h2>Scopri se ti conviene noleggiare</h2>
+    <p>Scrivimi di quali dispositivi hai bisogno e per quante persone: ti preparo una proposta su misura.</p>
+    <div class="cta-row"><a class="btn btn-wa " href="https://wa.me/393493159759?text=Ciao%20Alessandro%2C%20vorrei%20capire%20se%20conviene%20noleggiare%20i%20dispositivi%20per%20la%20mia%20azienda.%20%5BRif%3A%20noleggio-operativo%5D" target="_blank" rel="noopener" data-cta="band-wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2.1-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2.1L9 8.5z"/></svg>Scrivimi su WhatsApp</a><a class="btn btn-ghost" href="contatti.html" data-cta="band-form">Preferisco il modulo</a></div>
+  </div>
+</section>
+
+
+<footer class="site">
+  <div class="wrap-wide">
+    <div class="row">
+      <div>
+        <strong style="font-family: var(--font-display); color: var(--fg);">tuteva<span style="color: var(--accent);">.</span></strong> &middot; Un solo referente, e taac: i pezzi si incastrano.<br>
+        Sicurezza, fiscale, finanza e digitale &mdash; Nord Milano, Groane e Brianza Ovest.
+      </div>
+      <div>
+        <a href="https://wa.me/393493159759?text=Ciao%20Alessandro%2C%20vorrei%20parlarti%20di%20un%27esigenza%20della%20mia%20azienda." target="_blank" rel="noopener" data-cta="footer-wa">Scrivimi su WhatsApp</a> &nbsp;&middot;&nbsp; <a href="contatti.html">Modulo di contatto</a>
+      </div>
+    </div>
+    <p style="margin-top:16px;">Zone: <a href="zona-nord-milano.html">Nord Milano</a> &nbsp;&middot;&nbsp; <a href="zona-groane.html">Groane</a> &nbsp;&middot;&nbsp; <a href="zona-brianza-ovest.html">Brianza Ovest</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="privacy.html">Informativa privacy</a></p>
+    <hr class="rule" style="margin-top:20px;">
+    <p style="margin-top:12px; font-size:0.85rem;">Rizzi Alessandro Luca &middot; impresa individuale &middot; Bollate (MI) &middot; P.IVA 13448520968 &middot; REA MI-2723513 &middot; PEC alessandroluca.rizzi@pec.it</p>
+    <p style="margin-top:12px; font-size:0.8rem;">Sito in fase di costruzione &mdash; contenuti in corso di validazione con i partner.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/393493159759?text=Ciao%20Alessandro%2C%20vorrei%20capire%20se%20conviene%20noleggiare%20i%20dispositivi%20per%20la%20mia%20azienda.%20%5BRif%3A%20noleggio-operativo%5D" target="_blank" rel="noopener" data-cta="float-wa" aria-label="Scrivimi su WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2.1-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2.1L9 8.5z"/></svg><span>WhatsApp</span></a>
+</body>
+</html>
