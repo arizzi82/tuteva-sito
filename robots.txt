@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tuteva.it/sitemap.xml
+Sitemap: tuteva.it/sitemap.xml
